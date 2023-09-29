@@ -14,9 +14,9 @@
     <body>
         <header>
 
-            <ul class="container-fluid">
-                <h1>Paginaweb</h1>
-                <div class="container-sm">
+            <ul class="container">
+                <h1><a href="index.jsp">PropiedadesPrime</a></h1>
+                <div class="container">
                     <select>
                         <option>Venta</option>
                         <option>Alquiler</option>
@@ -33,13 +33,22 @@
                         <option>Depositos</option>
                     </select>
                     <input type="text" placeholder="&#128269;Ingresa la direccion del inmueble">
-                    <a class="btn btn-primary" style="width:70px;height:50px">
-                        <i class="bi bi-search"></i>
+                    <a class="btn btn-primary" style="width:70px;height:50px;position:relative">
+                        <i class="bi bi-search" style="position:absolute;top: 50%;left:50%;
+                           transform: translate(-50%, -50%);"></i>
                     </a>
                 </div>
                 <li><a href="venta.jsp">Ventas</a></li>
                 <li><a href="alquiler.jsp">Alquiler</a></li>
-                <li><a>Iniciar Sesión</a></li>
+                <div class="menu">
+                    <button id="menuButton" class="custom-button">Iniciar Sesión</button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="login.jsp">Iniciar Sesión</a>
+                        <a href="#">Mi cuenta</a>
+                        <a href="#">Favoritos</a>
+                        <a href="#">Publicar</a>
+                    </div>
+                </div>
             </ul>
         </header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light ">
@@ -51,7 +60,7 @@
             </div>
         </nav>
         <main style="height:auto">
-            <h3 class="mb-4">Inmuebles en venta</h3>
+            <h3 class="mb-4 mt-4">Inmuebles en venta</h3>
             <div class="card mb-3" style="max-width: 800px;">
                 <div class="row g-0">
                     <div class="col-md-4">

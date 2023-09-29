@@ -1,0 +1,95 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start;
+    max-width:300px;
+    padding: 20px;
+}
+h1{
+    margin:30px auto;
+    color:rgb(44, 158, 147);
+}
+p{
+    margin:20px auto;
+}
+.container_datos{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content:center;
+    width: 100%;
+}
+label{
+    font-size:17px;
+}
+
+input[type="email"],
+input[type="password"]{
+    width:100%;
+    height: 40px;
+    font-size:15px;
+    margin:10px 0;
+}
+.container_regresar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(191, 178, 166);
+    height: 45px;
+    border-radius: 10px;
+    padding:1px;
+    margin-bottom: 20px;
+    cursor:pointer;
+}
+a{
+    text-decoration: none;
+}
+.container_regresar p{
+    margin-left: 15px;
+    font-size: 17px;
+    color:black;
+    margin-right:10px;
+}
+.container_regresar i{
+    margin-left: 10px;
+}
+button{
+    background-color: rgb(29, 77, 240);
+    font-size: 17px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width:100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+h4{
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.registrarse{
+    margin-left:10px;
+    color:rgb(255, 116, 0);
+}

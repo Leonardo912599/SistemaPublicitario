@@ -14,15 +14,16 @@
     <body>
         <header>
             <ul>
+                <li><a class="nombre" href="index.jsp">PropiedadesPrime</a></li>
                 <li><a href="venta.jsp">Ventas</a></li>
                 <li><a href="alquiler.jsp">Alquiler</a></li>
-                <li><a>Iniciar Sesión</a></li>
+                <li><a href="login.jsp">Iniciar Sesión</a></li>
             </ul>
         </header>
         <main>
             <h1>Encuentra tu proxima casa,hoy</h1>
             <p>Propiedades en venta y alquileres</p>
-            <div>
+            <div class="container">
                 <select>
                     <option>Venta</option>
                     <option>Alquiler</option>
@@ -39,12 +40,13 @@
                     <option>Depositos</option>
                 </select>
                 <input type="text" placeholder="&#128269;Ingresa la direccion del inmueble">
-                <a class="btn btn-primary" style="width:70px;height:50px">
-                    <i class="bi bi-search"></i>
+                <a class="btn btn-primary" style="width:70px;height:50px;position:relative">
+                    <i class="bi bi-search" style="position:absolute;top: 50%;left:50%;
+                   transform: translate(-50%, -50%);"></i>
                 </a>
             </div>
         </main>
-        <footer class="fixed-bottom">
+        <footer>
             <div class="contenido">
                 <h4>Busquedas Frecuentes</h4>
                 

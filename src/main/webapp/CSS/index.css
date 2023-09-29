@@ -17,6 +17,7 @@ header{
     background: rgb(44, 158, 147);
     color:white;
     margin-bottom: 0;
+    width: 100%;
 }
 ul{
     display: flex;
@@ -46,6 +47,13 @@ main{
     justify-content: center;
     height: 300px;
     margin-bottom:100px;
+    position: relative;
+}
+li .nombre{
+    font-size:30px;
+    position:absolute;
+    left: 100px;
+    top:15px;
 }
 h1{
     margin-bottom: 20px;
@@ -69,6 +77,10 @@ input[type="text"]{
 }
 a{
     cursor: pointer;
+    text-decoration: none;
+    color:white;
+}
+li a{
     text-decoration: none;
     color:white;
 }
@@ -98,4 +110,65 @@ footer{
     margin: 0;
     padding: 0;
     font-size: 17px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+   
+}
+h1 a{
+    text-decoration: none;
+    color:white;
+    font-size:30px;
+}
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+#menuButton {
+    background-color: rgb(0, 123, 255);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Estilos para mostrar el menú al pasar el ratón sobre el botón */
+.menu:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos para los enlaces dentro del menú desplegable */
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+/* Estilos para los enlaces cuando se pasa el ratón sobre ellos */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.menu button{
+    width: 150px;
+    height: 35px;
+    border-radius:10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+/* Estilo para ocultar en pantallas pequeñas */
+@media (max-width: 767px) {
+    li .nombre {
+        display: none;
+    }
 }
