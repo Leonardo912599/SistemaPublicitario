@@ -5,12 +5,23 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-        <link rel="stylesheet" href="CSS/index.css"/>
+        <title>PropiedadesPrime</title>
+        <link rel="stylesheet" href="CSS/index.css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
               integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     </head>
+    <style>
+        a{
+            cursor: pointer;
+            text-decoration: none;
+            color:white;
+        }
+        
+        a:hover div.card{
+            border: 2px solid gray ;
+        }
+    </style>
     <body>
         <header>
 
@@ -46,7 +57,7 @@
                         <a href="login.jsp">Iniciar Sesión</a>
                         <a href="#">Mi cuenta</a>
                         <a href="#">Favoritos</a>
-                        <a href="#">Publicar</a>
+                        <a href="Publicar.jsp">Publicar</a>
                     </div>
                 </div>
             </ul>
@@ -61,21 +72,21 @@
         </nav>
         <main style="height:auto">
             <h3 class="mb-4 mt-4">Inmuebles en venta</h3>
-            <div class="card mb-3" style="max-width: 800px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Departamento en venta</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <a href="#"><div class="card mb-3" style="max-width: 800px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="..." class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Departamento en venta</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="card mb-3" style="max-width: 800px;">
+                </div></a>
+            <a href="#"><div class="card mb-3" style="max-width: 800px;">
                 <div class="row g-0">
                     <div class="col-md-4">
                         <img src="..." class="img-fluid rounded-start" alt="...">
@@ -88,7 +99,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div></a>
 
         </main>
         <footer>
